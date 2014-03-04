@@ -1,0 +1,39 @@
+# Maintainer: Your Name <youremail@domain.com>  
+# Contributor: Previous Name <address at domain dot com>  
+# Mission > Target > Unit > action(command)
+
+Target=NAME
+Unit=(perpare config tips ...)
+ver=VERSION
+rel=1
+desc=""
+url="https://wiki.archlinux.org/index.php/Arch_Packaging_Standards"
+license=('GPL')
+
+groups=()
+depends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+
+backup=()
+package=()
+source=(user-backup.tar.gz etc-conf-file.patch)
+md5sums=()
+
+prepare() {
+    action1
+    action2
+    download conf path others
+    pacman -S ${package[@]}
+}
+
+config() {
+    vim
+    patch
+}
+
+tips() {
+    cd
+}
